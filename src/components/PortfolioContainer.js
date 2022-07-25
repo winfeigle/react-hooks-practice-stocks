@@ -3,8 +3,6 @@ import Stock from "./Stock";
 
 function PortfolioContainer({ stocks, onRemoveStock }) {
 
-  console.log(stocks)
-
   const renderPortfolio = stocks.map(stock => {
     return <Stock key={stock.ticker} stock={stock} onStockClick={onRemoveStock}/>;
   })
