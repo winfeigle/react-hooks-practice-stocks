@@ -26,8 +26,9 @@ function MainContainer() {
   };
 
   const handleRemoveStock = (stockToRemove) => {
-    
-  }
+    const updatedPortfolio = portfolio.filter(stock => stock.id !== stockToRemove.id);
+    setPortfolio(updatedPortfolio);
+  };
 
 
   return (
